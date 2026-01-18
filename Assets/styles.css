@@ -638,6 +638,103 @@ body {
   margin-top: 0.25rem;
 }
 
+/* HERO SECTION */
+.product-hero {
+  text-align: center;
+  padding: 80px 20px;
+  
+  color: white;
+}
+
+.product-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.product-hero p {
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* PRODUCT SECTIONS */
+.product-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 20%;
+  gap: 40px;
+}
+
+.product-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.product-text {
+  flex: 1;
+}
+
+.product-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.product-text p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #555;
+}
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+  /* HERO SECTION */
+  .product-hero {
+    padding: 60px 15px;
+  }
+
+  .product-hero h1 {
+    font-size: 32px;
+  }
+
+  .product-hero p {
+    font-size: 16px;
+  }
+
+  /* PRODUCT SECTIONS */
+  .product-section {
+    flex-direction: column; /* Stack items vertically */
+    padding: 80px 10px;
+    gap: 30px;
+  }
+
+  .product-section.reverse {
+    flex-direction: column; /* Remove reverse for mobile */
+  }
+
+  .product-image img {
+    max-width: 100%;
+  }
+
+  .product-text h2 {
+    font-size: 24px;
+  }
+
+  .product-text p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+
+
 /* ========================================
    Music Section
    ======================================== */
