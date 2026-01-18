@@ -7,6 +7,7 @@
   <meta name="description" content="One Sky - Where the stars meet the sound. Experience the atmospheric indie rock journey.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Assets/styles.css">
   <link rel="stylesheet" href="styles.scss">
@@ -16,40 +17,81 @@
   <div id="star-field" class="star-field"></div>
 
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container navbar-content">
-      <a href="#home" class="logo">ONESKY</a>
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="container navbar-content">
+
+    <!-- Desktop Links -->
+    <div class="nav-links">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#music" class="nav-link">Music</a>
       
-      <div class="nav-links" id="nav-links">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#music" class="nav-link">Music</a>
-        <a href="#tour" class="nav-link">Tour</a>
-        <a href="#contact" class="nav-link">Contact</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+
+    <!-- RIGHT: Social Icons -->
+    <div class="nav-socials">
+     <a href="#" class="nav-social" aria-label="Instagram"> 
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> 
+            <rect x="2" y="2" width="20" height="20" rx="5"></rect> 
+            <circle cx="12" cy="12" r="4"></circle>
+             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line> 
+          </svg> 
+        </a>
+      <a href="#" class="nav-social" aria-label="YouTube"> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <rect x="2" y="5" width="20" height="14" rx="4"></rect> <polygon points="10 9 16 12 10 15 10 9"></polygon> </svg> </a>
+      <a href="#" class="nav-social" aria-label="Spotify"> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="12" cy="12" r="10"></circle> <path d="M7 10c3-1 7-.5 10 1"></path> <path d="M8 13c2.5-.8 5.5-.4 8 .8"></path> <path d="M9 16c2-.5 4-.3 6 .6"></path> </svg> </a>
+      <a href="#" class="nav-social" aria-label="Apple Music"> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <path d="M9 18V6l10-2v12"></path> <circle cx="7" cy="18" r="2"></circle> <circle cx="17" cy="16" r="2"></circle> </svg> </a>
+    
+    </div>
+    
+   
+
+    <!-- MOBILE NAV -->
+   
+<nav class="mobile-nav hidden">
+  
+      <div class="mobile-socials">
+        <a href="#" class="nav-social" aria-label="Instagram"> 
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> 
+            <rect x="2" y="2" width="20" height="20" rx="5"></rect> 
+            <circle cx="12" cy="12" r="4"></circle>
+             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line> 
+          </svg> 
+        </a>
+      <a href="#" class="nav-social" aria-label="YouTube">
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+           <rect x="2" y="5" width="20" height="14" rx="4"></rect> 
+           <polygon points="10 9 16 12 10 15 10 9">
+           </polygon> 
+          </svg> 
+      </a>
+      <a href="#" class="nav-social" aria-label="Spotify"> 
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> 
+          <circle cx="12" cy="12" r="10"></circle> <path d="M7 10c3-1 7-.5 10 1"></path> 
+          <path d="M8 13c2.5-.8 5.5-.4 8 .8"></path> <path d="M9 16c2-.5 4-.3 6 .6"></path>
+         </svg> 
+      </a>
+      <a href="#" class="nav-social" aria-label="Apple Music"> 
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> 
+          <path d="M9 18V6l10-2v12"></path> <circle cx="7" cy="18" r="2"></circle> 
+          <circle cx="17" cy="16" r="2"></circle>
+         </svg>
+     </a>
       </div>
 
-      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-        <svg class="menu-icon" id="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-        <svg class="close-icon hidden" id="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
+    
     </div>
+</div>
+  
+</nav>
+</nav>
 
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav hidden" id="mobile-nav">
-      <a href="#home" class="mobile-nav-link">Home</a>
-      <a href="#about" class="mobile-nav-link">About</a>
-      <a href="#music" class="mobile-nav-link">Music</a>
-      <a href="#tour" class="mobile-nav-link">Tour</a>
-      <a href="#contact" class="mobile-nav-link">Contact</a>
-    </div>
-  </nav>
+</div>
+
+</div>
+
+
 
   <!-- Hero Section -->
   <section id="home" class="hero-section">
@@ -68,7 +110,7 @@
           </svg>
           Listen Now
         </button>
-        <button class="btn btn-outline">View Tour Dates</button>
+       
       </div>
     </div>
 
@@ -87,7 +129,7 @@
           <div class="about-image-glow"></div>
           <div class="about-image-container">
             <div class="about-image-overlay"></div>
-            <img src="Assets/WhatsApp Image 2025-12-11 at 04.28.15_685487de.jpg" alt="One Sky band performing" class="about-image">
+            <img src="Assets/members/group.jpeg" alt="One Sky band performing" class="about-image">
           </div>
         </div>
 
@@ -111,43 +153,32 @@
     </p>
           </div>
           
-          <div class="stats-grid">
-            <div class="stat">
-              <p class="stat-number">3</p>
-              <p class="stat-label">Albums</p>
-            </div>
-            <div class="stat">
-              <p class="stat-number">150+</p>
-              <p class="stat-label">Shows</p>
-            </div>
-            <div class="stat">
-              <p class="stat-number">500K</p>
-              <p class="stat-label">Listeners</p>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
   </section>
 
+  
     <!-- HERO SECTION -->
      <section class="reveal">
     <section class="product-hero">
-        <h1>The Faces of One Sky</h1>
-        <p>Born Under the Stars</p>
+        <h1> Behind the Music</h1>
+        <p></p>
     </section>
      </section>
 
-      <!-- PAPER -->
+      <!-- Arun  -->
      <section class="reveal">
     <section class="product-section reverse">
         <div class="product-image">
-            <img src="Assets/members/arun.png" alt="Printing & Packaging">
+            <img src="Assets/members/arun dai.jpeg" alt="Printing & Packaging">
+            
         </div>
         <div class="product-text">
           
             
-            <h2>Arun-lead vocalist</h2>
+            <h2>Arun Tamang (Lead Vocals & Guitar)</h2>
             
             <p>
                 Arun’s voice is the heartbeat of One Sky. With a range that effortlessly moves from soulful whispers to powerful crescendos,
@@ -156,58 +187,122 @@
                  ability to convey emotion make him not just a singer, but a storyteller, guiding the audience through the atmospheric world 
                  of One Sky.
             </p>
+            <div class="nav-socials">
+            <a href="#" class="nav-social" aria-label="Instagram"> 
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> 
+            <rect x="2" y="2" width="20" height="20" rx="5"></rect> 
+            <circle cx="12" cy="12" r="4"></circle>
+             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line> 
+          </svg> 
+        </a>
+        <a href="#" class="nav-social" aria-label="YouTube">
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+           <rect x="2" y="5" width="20" height="14" rx="4"></rect> 
+           <polygon points="10 9 16 12 10 15 10 9">
+           </polygon> 
+          </svg> 
+      </a>
+      </div>
         
      
         </div>
     </section>
+    
      </section>
    
-    <!-- PRINTING & PACKAGING -->
+    <!-- jasmine didi -->
      <section class="reveal">
     <section class="product-section">
         <div class="product-image">
             <img src="Assets/members/jasmine.png" alt="Printing & Packaging">
         </div>
         <div class="product-text">
-            <h2>Jasmine – Bass & Synth</h2>
+            <h2>Jasmine Subba (Vocals, Bass & Production)</h2>
             <p>
                Jasmine lays down the grooves that give One Sky its pulse. Her bass lines are both steady and inventive, anchoring the band’s 
                sound while adding subtle, dynamic flair. On the synth, she weaves atmospheric textures that transport listeners into the band’s
                 sonic universe, creating layers of sound that feel both expansive and intimate. With her keen musical intuition and experimental
                  spirit, Jasmine shapes the mood of every track, making the music of One Sky feel alive and unforgettable.
             </p>
+            <div class="nav-socials">
+            <a href="#" class="nav-social" aria-label="Instagram"> 
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> 
+            <rect x="2" y="2" width="20" height="20" rx="5"></rect> 
+            <circle cx="12" cy="12" r="4"></circle>
+             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line> 
+          </svg> 
+        </a>
+        <a href="#" class="nav-social" aria-label="YouTube">
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+           <rect x="2" y="5" width="20" height="14" rx="4"></rect> 
+           <polygon points="10 9 16 12 10 15 10 9">
+           </polygon> 
+          </svg> 
+      </a>
+      </div>
         </div>
        
     </section>
      </section>
 
-    <!-- STATIONERY -->
+    <!-- subham dai -->
      <section class="reveal">
     <section class="product-section reverse">
         <div class="product-image">
-            <img src="Assets/members/subham.png" alt="Stationery">
+            <img src="Assets/members/subham dai.jpeg" alt="Stationery">
         </div>
         <div class="product-text">
-            <h2>subham - leads</h2>
+            <h2>Shubham Pradhan (Lead Guitar & Production)</h2>
             <p>
                 Subham is the sonic architect of One Sky, turning riffs into stories and solos into emotional journeys. With a mastery over tone and technique, he adds both fire and finesse to the band’s sound, bridging melody and rhythm seamlessly. His guitar work elevates every track, creating moments that linger long after the music fades. On stage, Subham’s energy and creativity shine, making every performance a vibrant, unforgettable experience.
             </p>
-          
+            <div class="nav-socials">
+            <a href="#" class="nav-social" aria-label="Instagram"> 
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> 
+            <rect x="2" y="2" width="20" height="20" rx="5"></rect> 
+            <circle cx="12" cy="12" r="4"></circle>
+             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line> 
+          </svg> 
+        </a>
+          <a href="#" class="nav-social" aria-label="YouTube">
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+           <rect x="2" y="5" width="20" height="14" rx="4"></rect> 
+           <polygon points="10 9 16 12 10 15 10 9">
+           </polygon> 
+          </svg> 
+      </a>
+      </div>
         </div>
     </section>
      </section>
 
-    <!-- Exercise WorkBook -->
+    <!-- suresh dai -->
      <section class="reveal">
     <section class="product-section">
         <div class="product-image">
-            <img src="Assets/members/image.png" alt="Printing & Packaging">
+            <img src="Assets/members/suresh da.jpeg" alt="Printing & Packaging">
         </div>
         <div class="product-text">
-            <h2>suresh - drums</h2>
+            <h2>Suresh BK (Drums)</h2>
             <p>
                 Suresh is the heartbeat of One Sky, driving every song with precision, power, and passion. His drumming balances rhythm and creativity, giving each track a dynamic foundation while adding unexpected flourishes that keep listeners hooked. Whether it’s a subtle beat or a thunderous crescendo, Suresh’s timing and energy bring the band’s music to life, making every performance pulse with intensity and emotion.
             </p>
+            <div class="nav-socials">
+            <a href="#" class="nav-social" aria-label="Instagram"> 
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> 
+            <rect x="2" y="2" width="20" height="20" rx="5"></rect> 
+            <circle cx="12" cy="12" r="4"></circle>
+             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line> 
+          </svg> 
+        </a>
+        <a href="#" class="nav-social" aria-label="YouTube">
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+           <rect x="2" y="5" width="20" height="14" rx="4"></rect> 
+           <polygon points="10 9 16 12 10 15 10 9">
+           </polygon> 
+          </svg> 
+      </a>
+      </div>
         </div>
         
     </section>
@@ -289,18 +384,7 @@
     <div class="container">
       <div class="contact-grid">
         <div class="newsletter">
-          <p class="section-label">Stay Connected</p>
-          <h2 class="section-title-sm">Join Our Universe</h2>
-          <p class="newsletter-text">Subscribe for exclusive updates, early access to tickets, and behind-the-scenes content.</p>
-
-          <form class="newsletter-form">
-            <div class="form-row">
-              <input type="email" placeholder="Enter your email" class="email-input">
-              <button type="submit" class="btn btn-primary">Subscribe</button>
-            </div>
-            <p class="form-note">We respect your privacy. Unsubscribe anytime.</p>
-          </form>
-        </div>
+          
 
         <div class="connect">
           <p class="section-label">Get in Touch</p>

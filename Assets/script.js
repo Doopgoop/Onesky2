@@ -129,33 +129,23 @@ function initShootingStars() {
 // ========================================
 // Mobile Navigation
 // ========================================
-const menuToggle = document.getElementById('menu-toggle');
-const menuIcon = document.getElementById('menu-icon');
-const closeIcon = document.getElementById('close-icon');
-const mobileNav = document.getElementById('mobile-nav');
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+const mobileNav = document.querySelector('.mobile-nav');
 
 menuToggle.addEventListener('click', () => {
-  const isOpen = !mobileNav.classList.contains('hidden');
-  
-  if (isOpen) {
-    mobileNav.classList.add('hidden');
-    menuIcon.classList.remove('hidden');
-    closeIcon.classList.add('hidden');
-  } else {
-    mobileNav.classList.remove('hidden');
-    menuIcon.classList.add('hidden');
-    closeIcon.classList.remove('hidden');
-  }
+  mobileNav.classList.toggle('show'); // use 'show' as in your CSS
 });
 
-// Close mobile nav when clicking a link
-document.querySelectorAll('.mobile-nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    mobileNav.classList.add('hidden');
-    menuIcon.classList.remove('hidden');
-    closeIcon.classList.add('hidden');
+
+  // Close mobile nav when clicking a link
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNav.classList.add('hidden');
+    });
   });
 });
+
 
 // ========================================
 // Smooth scroll for anchor links
