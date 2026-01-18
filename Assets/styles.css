@@ -655,6 +655,7 @@ body {
   font-size: 18px;
   margin-top: 10px;
   opacity: 0.9;
+  color: var(--primary);
 }
 
 /* PRODUCT SECTIONS */
@@ -677,9 +678,14 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+.product-hero p {
+  color: yar;
+
+}
 .product-text {
   flex: 1;
 }
+
 
 .product-text h2 {
   font-size: 32px;
